@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contaimer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 80px 100px 80px 50px;
+    grid-template-areas: "header header header header"
+    "side acticle1 acticle1 posts"
+    "side acticle2 acticle2 posts"
+    "side acticle3 acticle3 posts"
+    "footer footer footer footer";
+   
+}
+.header{
+    color: #fff;
+    padding: 5px;
+    background-color: #2c3e50;
+    grid-area: header;
+}
+.side{
+    background-color: #d7dbdd;
+    padding: 5px;
+    grid-area: side;
+}
+.acticle1{
+    padding: 5px;
+    grid-area: acticle1;
+    border: #eaeded 1px solid;
+}
+
+.acticle2{
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    grid-area: acticle2;
+   border: #e5e8e8 1px solid;
+}
+.acticle3{
+    padding: 5px;
+    grid-area: acticle3;
+    border: #e5e8e8 1px solid;
+}
+.posts{
+    background-color: #d7dbdd;
+    padding: 5px;
+    grid-area: posts;
+}
+.footer{
+    color: #fff;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    grid-area: footer;
+}
